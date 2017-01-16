@@ -19,39 +19,70 @@ main {
   display: flex;
   flex-direction: column;
   justify-content:space-around;
-  padding-top: 200px;
+  /*padding-top: 200px;*/
+  padding-top: 20vh
 }
 
-.wrapper {
-    /*background-color: pink;*/
-    display: flex;
-    flex-direction: column;
-    /*justify-content:space-between;*/
-    flex-wrap: wrap;
-    /*align-items: center;*/
-    height: 100vh;
-    width: 100%;
-}
 
 .arrow {
   display: flex;
+  /*height: 10%;*/
   justify-content:space-around;
+  margin-top: 200px;
+  /*width: auto;*/
+}
+
+.hiddenMenu {
+  display: none!important;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height:0;
+}
+
+.menuIcon {
+  height: 50px;
+  padding-left: 2%;
 }
 
 .pp {
-  font-size: 22px;
+  font-size: 25px;
+}
+
+.twitter {
+  /*align-items: flex-end;*/
+  height: 38px;
+  padding-left: 60vw;
+  /*padding-bottom: 1vh;*/
+  /*margin-top: 45px;*/
+}
+
+.wrapper {
+    display: inline;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*height: 100vh;
+    width: 100%;*/
 }
 
 .your {
-  font-size: 85px;
+  font-size: 100px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
-  h2 {display: none;}
+  h2 {
+    display: none;
+  }
+  /*header {
+    height: 0;
+    padding-top: 0;
+  }*/
 
+  .hiddenMenu {display:inherit!important;}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
